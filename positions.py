@@ -79,9 +79,8 @@ def make_chart(pos, df, option="position"):
 
 default_authors = ["Andy Molitor", "Daniel Jeremiah",  
                    "Matthew Freedman",     
-                 "Jeff Risdon", "Walter Cherepinsky", "Trevor Sikkema",
-               "Shane Hallam"]
-# yet to come "Peter Schrager", "Charlie Campbell", "Dane Brugler", "Danny Kelly", "Benjamin Solak", "Rob Staton",
+                  "Walter Cherepinsky", "Trevor Sikkema", "Rob Staton"]
+# yet to come "Peter Schrager", "Charlie Campbell", "Dane Brugler", "Danny Kelly", "Benjamin Solak", "Jeff Risdon",
 
 # A few positions are missing
 positions = [pos for pos in df["position"].unique() if isinstance(pos, str)]
@@ -91,7 +90,7 @@ authors = sorted(df["author"].unique())
 chosen_authors = st.multiselect(
     "Choose your authors", 
     options = authors, 
-    default = authors # default_authors when there are more
+    default = default_authors # default_authors when there are more
 )
 
 st.header("Positions")
