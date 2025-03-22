@@ -77,10 +77,10 @@ def make_chart(pos, df, option="position"):
     )
     return chart
 
-default_authors = ["Andy Molitor", "Daniel Jeremiah",  
+default_authors = ["Andy Molitor", "Dane Brugler", "Daniel Jeremiah",  
                    "Matthew Freedman",     
-                  "Walter Cherepinsky", "Trevor Sikkema", "Rob Staton"]
-# yet to come "Peter Schrager", "Charlie Campbell", "Dane Brugler", "Danny Kelly", "Benjamin Solak", "Jeff Risdon",
+                  "Walter Cherepinsky", "Trevor Sikkema", "Rob Staton", ]
+# yet to come "Peter Schrager", "Charlie Campbell", "Danny Kelly", "Benjamin Solak", "Jeff Risdon",
 
 # A few positions are missing
 positions = [pos for pos in df["position"].unique() if isinstance(pos, str)]
