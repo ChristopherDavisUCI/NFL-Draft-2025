@@ -3,7 +3,7 @@ import altair as alt
 import pandas as pd
 import numpy as np
 
-st.set_page_config(layout="wide", page_title="2024 NFL Draft Positions")
+st.set_page_config(layout="wide", page_title="2025 NFL Draft Positions")
 
 st.title('2025 NFL Draft')
 
