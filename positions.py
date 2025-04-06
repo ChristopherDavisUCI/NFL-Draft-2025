@@ -77,15 +77,18 @@ def make_chart(pos, df, option="position"):
     )
     return chart
 
-default_authors = ["Andy Molitor", "Dane Brugler", "Daniel Jeremiah",  
-                   "Matthew Freedman",     
-                  "Walter Cherepinsky", "Trevor Sikkema", "Rob Staton", ]
-# yet to come "Peter Schrager", "Charlie Campbell", "Danny Kelly", "Benjamin Solak", "Jeff Risdon",
 
 # A few positions are missing
 positions = [pos for pos in df["position"].unique() if isinstance(pos, str)]
 conferences = sorted([conf for conf in df["conference"].unique() if isinstance(conf, str)])
 authors = sorted(df["author"].unique())
+
+default_authors = sorted(list(df[df["date"].dt.month >= 3]["author"].unique()))
+
+# default_authors = ["Andy Molitor", "Dane Brugler", "Daniel Jeremiah",  
+#                    "Matthew Freedman",     
+#                   "Walter Cherepinsky", "Trevor Sikkema", "Rob Staton", ]
+# yet to come "Peter Schrager", "Charlie Campbell", "Danny Kelly", "Benjamin Solak", "Jeff Risdon",
 
 chosen_authors = st.multiselect(
     "Choose your authors", 
