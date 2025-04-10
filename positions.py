@@ -85,10 +85,10 @@ authors = sorted(df["author"].unique())
 
 # default_authors = sorted(list(df[df["date"].dt.month >= 3]["author"].unique()))
 
-default_authors = ["Andy Molitor", "Dane Brugler", "Daniel Jeremiah",  
+default_authors = ["Andy Molitor", "Charlie Campbell", "Dane Brugler", "Daniel Jeremiah",  
                    "Matthew Freedman",     
                   "Walter Cherepinsky", "Trevor Sikkema", "Rob Staton", ]
-# yet to come "Peter Schrager", "Charlie Campbell", "Danny Kelly", "Benjamin Solak", "Jeff Risdon",
+# yet to come "Peter Schrager", "Danny Kelly", "Benjamin Solak", "Jeff Risdon",
 
 chosen_authors = st.multiselect(
     "Choose your authors", 
