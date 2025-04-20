@@ -87,8 +87,8 @@ authors = sorted(df["author"].unique())
 
 default_authors = ["Andy Molitor", "Charlie Campbell", "Dane Brugler", "Daniel Jeremiah",  
                    "Matthew Freedman",     
-                  "Walter Cherepinsky", "Trevor Sikkema", "Rob Staton", ]
-# yet to come "Peter Schrager", "Danny Kelly", "Benjamin Solak", "Jeff Risdon",
+                  "Walter Cherepinsky", "Trevor Sikkema", "Rob Staton", "Jeff Risdon", ]
+# yet to come "Peter Schrager", "Danny Kelly", "Benjamin Solak", 
 
 chosen_authors = st.multiselect(
     "Choose your authors", 
